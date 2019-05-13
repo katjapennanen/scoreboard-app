@@ -40,13 +40,14 @@ class Scoreboard extends Component {
   render() {
     return (
       <div>
-        <h3>Scoreboard</h3>
-        <button onClick={this.sortByScore} className="buttons" id="sortBtn" >Sort by score</button>
+        <header>
+          <h2>Scoreboard hulabalooza</h2>
+        </header>
         <table>
           <tbody>
             <tr>
               <th>Username</th>
-              <th>Score</th>
+              <th>Score<span onClick={this.sortByScore} id="sortBtn" > &#171;&#187;</span></th>
             </tr>
             {
               this.state.scoreList.map((item) =>

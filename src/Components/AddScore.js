@@ -51,12 +51,14 @@ class AddScore extends Component {
 
   render() {
     return (
-      <div className="inputContainer">
-        <label htmlFor="username">Username: <input type="text" onChange={this.handleChange} id="username" value={this.state.newScoreListEntry.username} /></label>
-        <label htmlFor="score">Score: <input type="text" onChange={this.handleChange} id="score" value={this.state.newScoreListEntry.score} /></label>
-        <button onClick={this.saveScore} className="buttons" >Save</button>
-        <p>{this.state.errorMsg}</p>
-        
+      <div>
+        <div className="inputContainer">
+          <label htmlFor="username">Username: <input type="text" onChange={this.handleChange} id="username" value={this.state.newScoreListEntry.username} /></label>
+          <label htmlFor="score">Score: <input type="text" onChange={this.handleChange} id="score" value={this.state.newScoreListEntry.score} /></label>
+          <button onClick={this.saveScore} className="buttons" >Save</button>
+        </div>
+        <p id="error">{this.state.errorMsg}</p>
+
       </div>
     );
   }
