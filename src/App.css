@@ -7,9 +7,16 @@
 }
 
 table {
-  margin: auto;
   border-collapse: collapse;
   width: 100%;
+  height: 100px;
+  overflow: auto;
+}
+
+.tablediv {
+  width: 100%;
+  height: 500px;
+  overflow: auto;
 }
 
 tr {
@@ -42,6 +49,14 @@ tr:nth-child(even) {
 
 input {
   margin: 20px 5px 0px 1px;
+}
+
+#deleteCell {
+  width: 30px;
+}
+
+#scoreCell {
+  width: 70px
 }
 
 #score {

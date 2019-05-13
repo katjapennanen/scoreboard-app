@@ -1,1 +1,1 @@
-This is an demo app for a job application. A simple scoreboard using React.js and <a href="http://lokijs.org/#/">LokiJS</a> NoSql database (non-persistent), with the ability to list, sort and add scores.
+This is an demo app for a job application. A simple scoreboard using React.js and <a href="http://lokijs.org/#/">LokiJS</a> NoSql database (non-persistent), with the ability to list, sort and add scores. Styling done in plain CSS.
